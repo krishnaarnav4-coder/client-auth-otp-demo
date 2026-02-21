@@ -1,4 +1,4 @@
- Client OTP Authentication Demo
+ # Client OTP Authentication Demo
 
 This project demonstrates a simple One-Time Password (OTP) verification system used for secure client onboarding and service notifications.
 
