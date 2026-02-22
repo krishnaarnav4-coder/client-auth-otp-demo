@@ -1,12 +1,11 @@
-{
-  "name": "client-auth-otp-demo",
-  "version": "1.0.0",
-  "description": "Simple OTP authentication demo",
-  "main": "server/index.js",
-  "scripts": {
-    "start": "node server/index.js"
-  },
-  "dependencies": {
-    "express": "^4.18.2"
-  }
-}
+const express = require("express");
+const app = express();
+
+app.get("/", (req, res) => {
+  res.send("OTP Server is running successfully 🚀");
+});
+
+const PORT = process.env.PORT || 3000;
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
+});
